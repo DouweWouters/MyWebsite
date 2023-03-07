@@ -10,7 +10,7 @@
   
   /* Header/logo Title */
   .header {
-    background-image: url(lowpoly.png);
+    background-image: url(img/lowpoly.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -74,7 +74,7 @@
   /* Sidebar/left column */
   .side {
     -ms-flex: 0%; /* IE10 */
-    flex: 30%;
+    flex: 20%;
     background-color: #f1f1f1;
     padding: 21px;
   }
@@ -88,20 +88,20 @@
   }
   
   /* Fake image, just for this example */
-  .fakeimg {
+  .border {
     background-color: #aaaaaa;
     width: 100%;
     padding: 20px;
-    object-fit: center;
+    object-fit: center, center;
   }
   
   /* Profile Pic */
   .PP {
     background-color: transparent;
-    width: 290px;
-    height: 70px;
-    padding: 10px;
-    object-fit: center;
+    width: 50%;
+    padding: 0px;
+    object-fit: cover;
+    object-position: center right;
   }
 
   /* Schoolimages */
