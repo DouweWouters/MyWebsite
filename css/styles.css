@@ -113,6 +113,15 @@
     object-fit: center;
   }
 
+/* MIMIs */
+.memeimg {
+  background-color: transparent;
+  width: 60%;
+  height: 60%;
+  padding: 10px;
+  object-fit: center;
+}
+
   /* Footer */
   .footer {
     padding: 20px;
