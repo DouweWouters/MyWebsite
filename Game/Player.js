@@ -1,8 +1,8 @@
 class Player {
-  constructor(x, y, color, canvasWidth) {
+  constructor(x, y, initialColor, canvasWidth) {
     this.x = x;
     this.y = y;
-    this.color = color;
+    this.color = initialColor;
     this.speed = 8.5;
     this.isMovingLeft = false;
     this.isMovingRight = false;
@@ -16,6 +16,12 @@ class Player {
     translate(this.x, this.y);
     rectMode(CENTER);
     strokeWeight(0);
+
+    const time = millis();
+    const red = map(sin(time * 0.001), -1, 1, 0, 255);
+    const green = 0;
+    const blue = map(cos(time * 0.001), -1, 1, 0, 255);
+    this.color = color(red, green, blue);
 
     fill(176, 196, 222); // grijsblauw
     ellipse(0, 0, 105, 100);
