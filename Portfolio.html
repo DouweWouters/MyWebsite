@@ -2,52 +2,185 @@
 <html lang="en">
 
 <head>
-    <title>MyPortfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bootstrap_D2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
 </head>
 
-<body>
-
-    <div class="navbar">
-        <a href="https://www.linkedin.com/in/douwe-wouters/">Linkedin</a>
-        <a href="https://www.instagram.com/douwe_wouters/?hl=nl">Instagram</a>
-        <a href="https://www.facebook.com/douwe.wouters.5/">Facebook</a>
-        <a href="index.html">Home</a>
-    </div>
-
-    <div class="header">
-        <h1>My Portfolio</h1>
-        <p>Projects created by yours truly.</p>
-    </div>
-
-
-
-    <div class="row">
-        <div class="side">
-            <h2>Coming soon</h2>
-            <p>Here will come some portfolio related material.</p>
-            
+<body style="background: rgb(255,255,255);">
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light py-3">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: url(&quot;assets/img/LOGO.png&quot;);background-size: cover;"></span><span style="padding-right: 0px;margin-right: 0px;font-family: Roboto, sans-serif;">Home</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="About.html" style="--bs-primary: #000000;--bs-primary-rgb: 0,0,0;--bs-secondary: #6c757d;--bs-secondary-rgb: 108,117,125;--bs-success: #ffffff;--bs-success-rgb: 255,255,255;--bs-info: #f05f0d;--bs-info-rgb: 240,95,13;--bs-body-color: #212529;color: rgb(0,0,0);font-family: Roboto, sans-serif;">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Portfolio.html" style="color: rgb(0,0,0);font-family: Roboto, sans-serif;">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main style="margin: 70px;">
+        <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="font-family: Roboto, sans-serif;font-weight: bold;">Portfolio</h2>
+                    <p>Welkom to my projects showcase. Here you will find all sorts of projects were I worked alone and in a team. Most of them were made in school and some were in collaboration with other companies.<br>Enjoy! ;-)</p>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" style="max-width: 800px;">
+                <div class="col order-md-first" data-bss-hover-animate="pulse"><a href="#Mii">
+                        <div class="card" style="border-radius: 45px;"><img class="card-img w-100 d-block" src="assets/img/Mii.png" style="border-radius: 45px;opacity: 0.40;">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h4 style="font-family: Roboto, sans-serif;color: rgb(0,0,0);text-decoration: underline;">Mii</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col order-md-2" data-bss-hover-animate="pulse"><a href="#PYB">
+                        <div class="card" style="border-radius: 45px;"><img class="card-img w-100 d-block" src="assets/img/image1.png" style="opacity: 0.40;border-radius: 45px;">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h4 style="font-family: Roboto, sans-serif;color: rgb(0,0,0);text-decoration: underline;">Project PYB</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col order-md-2" data-bss-hover-animate="pulse"><a href="#Watchtower">
+                        <div class="card" style="border-radius: 45px;"><img class="card-img w-100 d-block" src="assets/img/Heroshot%20WT.png" style="border-radius: 45px;opacity: 0.40;">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h4 style="font-family: Roboto, sans-serif;color: rgb(0,0,0);text-decoration: underline;">Watchtower</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col order-md-2" data-bss-hover-animate="pulse"><a href="#SDV">
+                        <div class="card" style="border-radius: 45px;"><img class="card-img w-100 d-block" src="assets/img/SDV.png" style="border-radius: 45px;opacity: 0.40;">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h4 style="font-family: Roboto, sans-serif;color: rgb(0,0,0);text-decoration: underline;">Stone dumping vessel</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col order-md-2" data-bss-hover-animate="pulse"><a href="#Z-bike">
+                        <div class="card" style="border-radius: 45px;"><img class="card-img w-100 d-block" src="assets/img/Z-bike.png" style="opacity: 0.40;border-radius: 45px;">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h4 style="font-family: Roboto, sans-serif;color: rgb(0,0,0);text-decoration: underline;">Gen Z-bike</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col order-md-2" data-bss-hover-animate="pulse"><a href="#RC">
+                        <div class="card" style="border-radius: 45px;"><img class="card-img w-100 d-block" src="assets/img/RC-car.8.png" style="opacity: 0.40;border-radius: 45px;">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h4 style="font-family: Roboto, sans-serif;color: rgb(0,0,0);text-decoration: underline;">RC Eco Shell</h4>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
         </div>
-        <div class="main">
-            <h2>Sorry buddy this page is still under construction</h2>
-            <p>Hey there, thanks for stopping by my portfolio page! Unfortunately, this page is currently under construction and looks about as polished as a potato in a tuxedo. But don't worry, I'm working on updating it with my latest projects and designs, and hopefully, it will look more like a masterpiece and less like a toddler's finger painting soon.</p>
-            <p>And hey, if you have any tips for how to make a website look less like a flaming disaster, please send them my way. <br>
-                Thank you for your patience and understanding, and hopefully, I'll have something less embarrassing to show you soon!</p>
-            </p>
-            <img class="memeimg" style="fit-content" src="img/UnderConstruction.png">
-           
+        <div class="container py-4 py-xl-5" id="Mii">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col"><img class="rounded w-100 h-100 fit-cover" src="assets/img/Mii.png"></div>
+                <div class="col d-flex flex-column justify-content-center p-4">
+                    <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <h4 style="font-family: Roboto, sans-serif;font-weight: bold;">Mii against the world</h4>
+                            <p style="font-family: Roboto, sans-serif;">Meet Mii. Mii is a robot made for defending earth. In a lab there were experimenting with AI and drones. The AI got so smart that they took control of all the drones.<br><br>This is were Mii and you, yes you there reader. He needs you to control him and defend the world against these drones on the loose!</p><a class="btn btn-primary" role="button" style="background: rgb(0,0,0);">Play it yourself!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="footer">
-        <h2>Contacts</h2>
-        <p>GSM: <a href="Tel+32490438970">+32 490 43 89 70</a></p>
-        <p>E-mail: <a href="mailtodouwe.wouters@live.com">douwe.wouters@live.com</a></p>
-    </div>
-
+        <div class="container py-4 py-xl-5">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col" id="PYB"><img class="rounded w-100 h-100 fit-cover" style="min-height: 300px;" src="assets/img/image1.png"></div>
+                <div class="col d-flex flex-column justify-content-center p-4">
+                    <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <h4 style="font-weight: bold;">Project PYB</h4>
+                            <p style="font-family: Roboto, sans-serif;">Project PYB began as a design competition by kampC, a research group for sustainable living solutions. They printed Europe's first two-story concrete house. Winning the competition allowed me to print my design, the modular sitting bench called ZITBOOG, on their 3D concrete printer. <br><br>This led to Project PYB (Print Your Bench), simplifying the entire process from customization to manufacturing. An interface enables users to select parameters, which are then converted into a code for a robot arm to print the bench according to the customer's specifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-xl-5" id="Watchtower">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col"><img class="rounded w-100 h-100 fit-cover" style="min-height: 300px;" src="assets/img/Heroshot%20WT.png"></div>
+                <div class="col d-flex flex-column justify-content-center p-4">
+                    <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <h4 style="font-weight: bold;">Watchtower</h4>
+                            <p style="font-family: Roboto, sans-serif;">Watchtower originated as a project during my time at the Polytech University in St. Petersburg, Russia, during a winter school program. The task was to create a prototype within a two-week timeframe. Faced with the issue of my watch getting scratched while charging on the ground, I devised a solution: a docking station. <br><br>However, I wanted it to be more than just functional; I aimed to make it visually appealing. Inspired by the clock-topped towers of churches, I designed the Watchtower—a docking station shaped like a church tower—for my watch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-xl-5" id="SDV">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col"><img class="rounded w-100 h-100 fit-cover" style="min-height: 300px;transform: scale(1);" src="assets/img/SDV.png"></div>
+                <div class="col d-flex flex-column justify-content-center p-4">
+                    <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <h4 style="font-weight: bold;">Stone dumping vessel</h4>
+                            <p style="font-family: Roboto, sans-serif;">At MULTI Engineering, for my bachelor thesis, I designed and analysed a modular stone dumping vessel. It's used to push rocks off the deck into the water for reinforcing dikes and covering underwater cables. <br><br>The challenge was to create a design that could handle 300 tons of stone on each side, without using bolts or screws due to saltwater exposure. The entire vessel had to be crane-mounted for easy assembly and disassembly. Detailed analysis was conducted to ensure the hydraulic pistons and structure could withstand the required forces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-xl-5" id="Z-bike">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col"><img class="rounded w-100 h-100 fit-cover" style="min-height: 300px;transform: scale(1);" src="assets/img/Z-bike.png"></div>
+                <div class="col d-flex flex-column justify-content-center p-4">
+                    <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <h4 style="font-weight: bold;">Gen Z-bike</h4>
+                            <p style="font-family: Roboto, sans-serif;">Our team, consisting of three students including myself, was tasked with designing a mountain bike frame using CFRP (Carbon Fiber Reinforced Polymer). The unique requirement was to shape the frame in the form of the letter Z. <br><br>Our project involved designing molds for manufacturing, as well as creating detailed documentation on the materials and carbon fiber layup process for the molds. Unfortunately, due to the COVID-19 pandemic, we were unable to fabricate the frame or the molds as the school was closed during that period. However, we successfully completed the full design of the Z-frame using the freeform feature in Autodesk Inventor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-xl-5" id="RC">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col"><img class="rounded w-100 h-100 fit-cover" style="min-height: 300px;transform: scale(1);" src="assets/img/RC-car.8.png"></div>
+                <div class="col d-flex flex-column justify-content-center p-4">
+                    <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <h4 style="font-weight: bold;">RC Eco Shell</h4>
+                            <p style="font-family: Roboto, sans-serif;">The Eco Shell competition provides a platform for participants to design and construct eco-friendly, sustainable cars, fostering innovation. Our school, Thomas More UAS, achieved victory in this competition, leading to the creation of a smaller RC version of the winning car. <br><br>As a team of three students, our project entailed redesigning the body and drivetrain of the RC car, incorporating captivating features such as lights. This experience marked a pivotal milestone in my academic journey, fuelling my passion for engineering and automotive design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a href="https://www.facebook.com/douwe.wouters.5"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook text-black-50">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                        </svg></a></li>
+                <li class="list-inline-item me-4"><a href="https://www.linkedin.com/in/douwe-wouters/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin text-black-50">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                        </svg></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/douwe_wouters/?hl=nl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-black-50">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                        </svg></a></li>
+            </ul>
+            <p class="mb-0">Copyright © 2023 Douwe Wouters</p>
+        </div>
+    </footer>
+    <footer class="text-center"></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
 </body>
 
 </html>
