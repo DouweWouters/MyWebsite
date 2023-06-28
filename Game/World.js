@@ -27,7 +27,7 @@ function setup() {
   startButton = new Button(width / 2, height / 2 + 50, 175, 50, "Start");
   restartButton = new Button(width / 2, height / 2 + 50, 175, 50, "Try again?");
   
-  spacebarSound.setVolume(spacebarVolume);
+  spacebarSound.setVolume(spacebarVolume); // Able to change volume 
 }
 
 function draw() {
@@ -61,7 +61,7 @@ function draw() {
         break;
       }
 
-      // Check for collision with bullets
+      // Check for collision with bullets and enemy
       for (let j = 0; j < bullets.length; j++) {
         if (bullets[j].collidesWith(enemies[i])) {
           bullets.splice(j, 1); // Remove bullet
@@ -79,7 +79,7 @@ function draw() {
 
       // Remove bullets that are off-screen
       if (bullets[i].y < 0) {
-        bullets.splice(i, 1);
+        bullets.splice(i, 1); // Remove bullet from array
       }
     }
 
