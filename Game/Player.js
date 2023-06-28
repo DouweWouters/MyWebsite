@@ -7,7 +7,7 @@ class Player {
     this.isMovingLeft = false;
     this.isMovingRight = false;
     this.canvasWidth = canvasWidth;
-    this.bullets = [];
+    this.bullets = []; // array of bullets, initialy empty
     this.isColliding = true;
   }
 
@@ -55,6 +55,7 @@ class Player {
     ellipse(20, -7.5, 10, 10);
     ellipse(-20, -7.5, 10, 10);
 
+    // changing facial expression
     if (this.isColliding) {
       rect(0, -12.5, 60, 10);
       fill(256, 256, 256); // wit
@@ -65,6 +66,7 @@ class Player {
       arc(0, -2.5, 15, 10, 0, PI);
     }
 
+    // bullets shot by player visible
     for (let i = 0; i < this.bullets.length; i++) {
       this.bullets[i].draw();
     }

@@ -10,7 +10,7 @@ class Bullet {
   }
 
   update() {
-    this.y -= this.speed;
+    this.y -= this.speed; // upwards movement
   }
 
   draw() {
@@ -18,12 +18,12 @@ class Bullet {
     ellipse(this.x, this.y, this.radius * 2, this.radius * 2);
   }
   collidesWith(enemy) {
-    // Check for collision between the bullet and the enemy
+    // Check for collision between the bullet and the enemy (all be true to hit)
     if (
-      this.x + this.width >= enemy.x &&
-      this.x <= enemy.x + enemy.image.width &&
-      this.y + this.height >= enemy.y &&
-      this.y <= enemy.y + enemy.image.height
+      this.x + this.width >= enemy.x && // If this condition is true, it means the bullet is to the right of or overlapping with the enemy horizontally
+      this.x <= enemy.x + enemy.image.width && // If this condition is true, it means the bullet is to the left of or overlapping with the enemy horizontally.
+      this.y + this.height >= enemy.y && // If this condition is true, it means the bullet is below or overlapping with the enemy vertically.
+      this.y <= enemy.y + enemy.image.height // If this condition is true, it means the bullet is above or overlapping with the enemy vertically.
     ) {
       return true;
     }

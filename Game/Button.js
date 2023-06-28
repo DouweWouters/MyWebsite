@@ -20,6 +20,7 @@ class Button {
   }
 
   isMouseOver() {
+    // checking if the mouse is over the button
     return (
       mouseX > this.x - this.width / 2 &&
       mouseX < this.x + this.width / 2 &&
